@@ -1,0 +1,31 @@
+---
+title: "Untitled"
+format: html
+editor: visual
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+## Food
+
+i have eaten ***rice***
+
+# Food
+
+```{r}
+#| label: setup
+#| include: false
+library(tidyverse)
+titanic <- read_csv("/cloud/project/titanic.csv")
+```
+# My Section Title
+My text followed by my figure.
+```{r}
+ggplot(titanic, aes(Fare, Age)) +
+  geom_point()
+
+```
+
+
